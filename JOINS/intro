@@ -1,0 +1,38 @@
+-- we need join key in two tables
+-- a similar colunm in two tables
+-- types of joins
+-- 1. inner join = only matching rows in two table
+-- 2. left join = return all rows of left table and only matching rows in right table
+
+-- 3. Right join = return all rows of right table and only matching rows from left table
+
+-- 4 .full join
+
+
+-- =========================
+--SQL aliases
+--specifies a short alias name for a table or a column.
+SELECT 
+   c.customer_id
+FROM customers AS c
+
+--- colunm name alias
+SELECT 
+   c.customer_id AS cid
+FROM customers AS c
+
+--##############################################
+-- INNER JOINS
+
+
+-- List customers ID , first name ,order ID quantity. exclude the custors who have not placed any orders
+SELECT  
+   c.customer_id, 
+   c.first_name,
+   o.order_id,
+   o.quantity
+FROM  customers as c
+INNER JOIN orders as o
+ON c.customer_id=o.customer_id
+
+--#################################

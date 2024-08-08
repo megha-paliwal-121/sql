@@ -1,0 +1,17 @@
+-- it is used to remove duplicate data in the result set.
+-- it is a keyword
+-- example 
+-- list all countries of all customers without duplicates
+-- if run query 
+SELECT
+    country
+FROM customers
+--IT WILL PROVIDE THE NAMES OF ALL COUNTRY WHICH WILL CONTAIN DUPLICATE VALUE 
+-- TO GET UNIQUE VALUE WE WILL USE DISTINCT
+
+SELECT  DISTINCT
+   country
+FROM customers
+ -- as default SELECT doesn't sort the result in any order
+
+ 

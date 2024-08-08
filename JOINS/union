@@ -1,0 +1,35 @@
+-- UNION ALL
+--combines the rows without removing duplicates
+-- work on rows not on column
+-- union
+-- combine the rows and it removes any duplicates
+
+
+-- example
+-- list first name , last name and country of all person from customers and employees
+
+SELECT 
+  first_name,
+  last_name,
+  country
+FROM customers
+UNION ALL
+SELECT 
+  first_name,
+  last_name,
+  country
+FROM employees
+
+----- without duplicates
+SELECT 
+  first_name,
+  last_name,
+  country
+FROM customers
+UNION 
+SELECT 
+  first_name,
+  last_name,
+  country
+FROM employees
+--- no of colunm and data type is important

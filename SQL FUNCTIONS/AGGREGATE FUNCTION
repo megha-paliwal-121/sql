@@ -1,0 +1,79 @@
+-- COUNT() RETURN THE NUMBER OF ROWS IN A RESULT SET
+-- SUM()   RETURN THE SUM OF VALUES
+-- AVG()   RETURN THE SUM OF VALUES
+-- MAX()   RETURN THE MAXIMUM VALUE
+-- MIN()   RETURN THE MINIMUM VALUE
+
+
+
+
+---------count()---------------------
+
+-- Find the  total number of customers
+SELECT COUNT(*)
+FROM customers
+--output  > count()
+-----------  5
+
+SELECT COUNT(*) AS total_customers
+FROM customers
+--output  > total_customers
+-----------  5
+
+SELECT COUNT(score) AS total_score
+FROM customers
+
+--output  > total_score
+-----------  4
+
+
+
+--##############################
+-- SUM()
+-- Returns the sum of all values in a column
+-- Works only with numeric column
+-- NULLs are treated as 0
+
+
+-- find the total quantity of all orders
+SELECT SUM(quntity) AS sum_quantity
+FROM order
+
+
+
+
+--##############################
+-- AVG()
+-- Returns the sum of all values in a column
+-- Works only with numeric column
+-- NULLs are IGNORED
+
+-- find the total quantity of all orders
+SELECT AVG(score) AS AVG_SCORE
+FROM customers
+
+
+-- #########################
+-- MIN()
+-- RETURNS THE MINIMUM VALUE IN A COLUMN
+
+-- find the Lowest score of all customers
+SELECT MIN(score) AS MIN_SCORE
+FROM customers
+
+--Find the earliest and latest order dates
+-- earliest date
+SELECT MIN(order_date) AS min_order_date 
+FROM orders
+-- latest date
+SELECT MAX(order_date) AS max_order_date 
+FROM orders
+
+
+-- ################################
+-- MAX()
+-- RETURNS THE MAXIMUM VALUE IN A COLUMN
+
+-- find the higest score of all customers
+SELECT MAX(score) AS MAX_SCORE
+FROM customers

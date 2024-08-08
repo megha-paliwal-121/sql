@@ -1,0 +1,55 @@
+-- SQL STRING FUNCTIONS----
+--1. CONCAT()  return a string by concatenating two or more string values.
+
+--2. LOWER()  converts a string to lowercase
+
+--3. UPPER()  converts a string to uppercase.
+
+--4. TRIM()  remove leading and trailing spaces from a string.
+
+--5. LENGTH() returns the length of a string
+
+--6. SUBSTRING() returns the substring from string
+
+-- list all customer names , where the name is combination of first name and last name
+SELECT 
+CONCAT(first_name,last_name)
+FROM customers
+
+SELECT 
+CONCAT(first_name,'-',last_name) AS customer_name
+FROM customers
+
+----list the first name of all customers in uppercase
+SELECT 
+UPPER(first_name) AS upper_first_name
+FROM customers
+
+----list the first name of all customers in lowercase
+SELECT 
+LOWER(first_name) AS lower_first_name
+FROM customers
+
+--- displaying both
+SELECT 
+LOWER(first_name) AS lower_first_name ,
+UPPER(first_name) AS upper_first_name
+FROM customers
+
+
+-- note :: all functions in the SELECT WILL NOT CHANGE THE DATA IN THE DATABASE
+
+
+--###################
+--TRIM() IT IS USED TO REMOVE WHITE SPACE
+-- TYPES
+-- lTRIM()  - IT REMOVE WHITE SPACE PRESENT AT LEFT SIDE OF NAME
+
+-- RTRIM()    -IT REMOVE WHITE SPACE PRESENT AT RIGHT SIDE OF NAME
+
+SELECT 
+TRIM(last_name) AS clean_last_name
+FROM customers  
+
+-- #############
+-- LENGTH()  IT calculate no of character

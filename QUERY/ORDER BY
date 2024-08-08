@@ -1,0 +1,20 @@
+-- ORDER BY
+-- IT IS USED TO SORTS THE RESULT IN A PARTICULAR ORDER
+-- we can sort by desc or asc
+
+-- Retrive all customers where the result is sorted by score(smallest first)
+SELECT *
+FROM customers
+ORDER BY score asc
+
+-- ASC = smallest first
+SELECT *
+FROM customers
+ORDER BY score
+
+-- by default ORDER BY sort ascending
+-- Retrive all customers where the result is sorted by score(higest first)
+SELECT *
+FROM customers
+ORDER BY score DESC
+----Re
