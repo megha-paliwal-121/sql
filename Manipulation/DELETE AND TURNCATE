@@ -1,0 +1,17 @@
+-- DELETE 
+-- DELETE ROWS FROM TABLES
+-- DELETE WITHOUT WHERE DELETES ALL ROWS FROM A TABLE
+
+
+-- DELETE BOTH NEW CUSTOMERS ANNA AND MEGHA FROM OUR DATABASE
+DELETE FROM customers
+WHERE customer_id IN(6,7)
+
+
+-- ################################
+
+-- TRUNCATE
+-- USE TRUNCATE  instead of delete if you want to delete all rows from a table
+
+TRUNCATE TABLE_NAME
+TRUNCATE customers

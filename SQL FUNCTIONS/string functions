@@ -53,3 +53,8 @@ FROM customers
 
 -- #############
 -- LENGTH()  IT calculate no of character
+
+
+
+-- #################
+-- SUBQUERY()
