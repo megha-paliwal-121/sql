@@ -1,0 +1,7 @@
+-- BETWEEM - RETURN true if a value falls within a specific range
+-- find all customers whose score falls in the range between 100 and 500.
+SELECT *
+FROM customers
+WHERE score BETWEEM 100 AND 500
+-- IT INCLUDE 100 AND 500
+-- without between using 2 condition

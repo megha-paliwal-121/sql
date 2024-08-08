@@ -1,0 +1,14 @@
+mysql
+database/schema - a logical container that contain similar tables
+tables - it contain data . it is also called object,entity ,Relation
+colunm = attribute, feild 
+rows = Record ,tuple 
+cell /data item/column value = single value like name of student.
+
+suppose you have table which contain information about student .
+then names of all student is colunmn and info of single student is row
+
+
+
+types of keys
+primary key 

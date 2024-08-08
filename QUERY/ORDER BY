@@ -17,4 +17,7 @@ ORDER BY score
 SELECT *
 FROM customers
 ORDER BY score DESC
-----Re
+----Retrive all customers,sorting the result by country (alphabetically) and then by score (highest first)
+SELECT *
+FROM customers
+ORDER BY country ASC , score DESC

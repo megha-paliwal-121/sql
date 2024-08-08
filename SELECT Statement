@@ -1,0 +1,12 @@
+we have a lot of clauses in select statement .
+
+
+ORDER of clause
+SELECT 
+FROM
+JOINS
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+LIMIT

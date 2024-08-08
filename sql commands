@@ -1,0 +1,29 @@
+sql command types
+1. ddl = data definition language
+example = CREATE , DROP , ALTER
+2. DQL =data query language
+example = SELECT
+3. DML = data manupilation language
+example =INSERT , DELETE ,UPDATE
+4.DCL= data control language 
+GRANT,REVOKE
+5. TCL =transactional control language
+COMMIT ,ROLLBACK,SAVEPOINT
+
+
+==========================
+for comment  --
+clauses = sql query is divided into different part called clause
+SELECT first_name , last_name
+FROM customers
+WHERE country = 'Italy'
+  AND score < 500
+
+
+here we have there 
+clause SELECT , FROM , WHERE.
+keywords = SELECT,FROM,WHERE,AND
+identifier = name given to tables ,db ,colunm name etc
+operators  = ,< 
+
+=====================

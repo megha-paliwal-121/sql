@@ -1,0 +1,9 @@
+-- return True if a value is in a set of values
+
+-- find all customers whose id is equal to 1,2 or 5.
+
+SELECT *
+FROM customers
+WHERE customer_id IN (1,2,5)
+  
+-- without in

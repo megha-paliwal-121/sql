@@ -1,0 +1,8 @@
+-- it is used to  filter rows based on specified conditions
+-- LIST only germany customers
+SELECT * 
+FROM customers 
+WHERE country='germany'
+
+-- find all customers whose score is higher than 500
+

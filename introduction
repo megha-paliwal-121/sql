@@ -1,0 +1,32 @@
+data can be translated , processed or structured into a new form called information.
+what is DB
+a collection of structured and related data organised to be accessed and managed.
+types of DB
+1. relational sql database
+2. nosql database
+3. Distributed database
+4. cloud database
+
+
+what is sql and nosql.
+sql - store data in tables (column and rows).
+nosql - store in form of key and value , graph store, column store,documents.
+when your company is confirm about the type of data store it uses nosql like - in tabalue .
+but sql are widely used bcz it give clear understanding .
+
+
+what is dbms ?
+dbms stand for database management system.
+it is a software used for performing sql queries .
+example : mqsql ,postgress
+
+what is sql?
+sql = structed query language.
+language of database.
+
+
+how sql works ?
+                                 
+user/apps -----------> dbms <------sql(pass <-----------result )---------->database
+
+

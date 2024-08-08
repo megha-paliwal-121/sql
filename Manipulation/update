@@ -1,0 +1,18 @@
+-- UPDATE
+-- Modify the values of an exixting rows in a table 
+-- UPDATE WITHOUT Where changes the values of all rows
+-- use primany key with where command
+
+
+
+--change the country of customer id 7 to germany
+UPDATE customers
+SET country = 'GERMANY'
+WHERE customer_ID=7
+
+
+-- CHANGE the score of the customer anna to 100 and change her country from uk to usa
+UPDATE customers
+SET country = 'USA',
+    score=100
+WHERE customer_ID=7

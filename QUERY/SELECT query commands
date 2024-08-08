@@ -1,0 +1,11 @@
+-- Reterive all data and colunms from customer table
+-- first select the db
+USE db_sql_tutorial
+SELECT * 
+FROM customers
+-- * means all data
+-- retrive Only first name and country of all customers
+SELECT 
+   first_name ,
+   country
+FROM customers   
